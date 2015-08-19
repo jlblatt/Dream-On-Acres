@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+  bindWindowSizeEvent(function(){
+    $(".hero").height($(window).height());
+  });
+
   FastClick.attach(document.body);
   
 });
