@@ -3,7 +3,12 @@
 $(document).ready(function(){
 
   bindWindowSizeEvent(function(){
-    $(".hero").height($(window).height());
+    $("#hero").height($(window).height() - $("#main-nav").height());
+  });
+
+  bindIntereactionEvent(function(){
+    if($(window).scrollTop() > $("#hero").height()) $("#main-nav").addClass('navbar-fixed-top');
+    else $("#main-nav").removeClass('navbar-fixed-top');
   });
 
   FastClick.attach(document.body);
