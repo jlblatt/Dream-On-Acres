@@ -1,2 +1,2 @@
-#hero{background:#ddd}
+.hero{position:relative}.hero .text{position:absolute;top:40%;width:100%;color:#fff;text-align:center;z-index:1}.hero .slides{width:100%;height:100%}.hero .slides .slide{position:absolute;width:100%;height:100%;background-color:#666;background-size:cover;background-blend-mode:multiply}.hero .slides .slide.slide-1{background-image:url("../images/slide-1.jpg")}.hero .slides .slide.slide-2{background-image:url("../images/slide-2.jpg")}.hero .slides .slide.slide-3{background-image:url("../images/slide-3.jpg")}
 /*# sourceMappingURL=styles.css.map */

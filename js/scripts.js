@@ -3,13 +3,19 @@
 $(document).ready(function(){
 
   bindWindowSizeEvent(function(){
-    $("#hero").height($(window).height() - $("#main-nav").height());
+    $(".hero").height($(window).height() - $(".main-nav").height());
   });
 
   bindIntereactionEvent(function(){
-    if($(window).scrollTop() > $("#hero").height()) $("#main-nav").addClass('navbar-fixed-top');
-    else $("#main-nav").removeClass('navbar-fixed-top');
+    if($(window).scrollTop() > $(".hero").height()) $("#main-nav").addClass('navbar-fixed-top');
+    else $(".main-nav").removeClass('navbar-fixed-top');
   });
+
+  setInterval(function(){
+    $(".hero .slides .slide:last-child").fadeOut(function(){
+      $(this).prependTo(".hero .slides").show();
+    });
+  }, 8000);
 
   FastClick.attach(document.body);
   
