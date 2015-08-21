@@ -7,7 +7,7 @@ $(document).ready(function(){
   });
 
   bindIntereactionEvent(function(){
-    if($(window).scrollTop() > $(".hero").height()) $("#main-nav").addClass('navbar-fixed-top');
+    if($(window).scrollTop() > $(".hero").height()) $(".main-nav").addClass('navbar-fixed-top');
     else $(".main-nav").removeClass('navbar-fixed-top');
   });
 

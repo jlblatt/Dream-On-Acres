@@ -2,6 +2,7 @@
 
 .hero {
   position: relative;
+  background: #000;
 
   .text {
     position: absolute;
@@ -29,4 +30,10 @@
       &.slide-3 {background-image: url("../images/slide-3.jpg");}
     }
   }
+}
+
+.main-nav {
+  background: #000;
+  border-radius: 0;
+  border: 0;
 }
