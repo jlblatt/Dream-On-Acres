@@ -3,7 +3,9 @@
 $(document).ready(function(){
 
   bindWindowSizeEvent(function(){
-    $(".hero").height($(window).height() - $(".main-nav").height());
+    var newHeight = $(window).height() - $(".main-nav").height();
+    if(newHeight < 500) newHeight = 500;
+    $(".hero").height(newHeight);
   });
 
   bindIntereactionEvent(function(){

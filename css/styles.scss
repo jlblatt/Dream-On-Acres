@@ -1,16 +1,61 @@
 @import "bourbon/bourbon";
 
+
+$xsmall: 360px;
+$small: 640px;
+$medium: 1024px;
+$large: 1440px;
+$xlarge: 1920px;
+
+body {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
 .hero {
   position: relative;
   background: #000;
 
   .text {
     position: absolute;
-    top: 40%;
+    top: 25vh;
     width: 100%;
     color: #fff;
     text-align: center;
     z-index: 1;
+    text-shadow: 0 0 24px rgba(0,0,0,1);
+
+    a {
+      color: #fff;
+    }
+
+    h1 {
+      font-family: Lobster;
+      font-size: 12vw;
+
+      @media (min-width: $small) {
+        font-size: 84px;
+      }
+    }
+
+    h2 {
+      font-size: 6vw;
+      font-weight: 300;
+
+      @media (min-width: $small) {
+        font-size: 36px;
+      }
+    }
+
+    h4 {
+      font-size: 4vw;
+      font-weight: 300;
+      line-height: 1.6;
+
+      @media (min-width: $small) {
+        font-size: 18px;
+      }
+    }
   }
 
   .slides {
@@ -21,9 +66,9 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #666;
+      background-color: #444;
       background-size: cover;
-      background-blend-mode: multiply;
+      background-blend-mode: overlay;
 
       &.slide-1 {background-image: url("../images/slide-1.jpg");}
       &.slide-2 {background-image: url("../images/slide-2.jpg");}
