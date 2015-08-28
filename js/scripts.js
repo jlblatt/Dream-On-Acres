@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   //home section height
   bindWindowSizeEvent(function(){
-    var newHeight = $(window).height() - $("nav.navbar").height();
+    var newHeight = $(window).height() - $("#nav nav").height();
     if(newHeight < 500) newHeight = 500;
     $("#home").height(newHeight);
   });
@@ -13,8 +13,18 @@ $(document).ready(function(){
 
   //sticky nav
   bindIntereactionEvent(function(){
-    if($(window).scrollTop() > $("#home").height()) $("nav.navbar").addClass('navbar-fixed-top');
-    else $("nav.navbar").removeClass('navbar-fixed-top');
+    
+    if($(window).scrollTop() > $("#home").height())
+    {
+      $("#nav nav").addClass('navbar-fixed-top');
+      $("#nav").css({height: $("#nav nav").height()});
+    }
+    
+    else 
+    {
+      $("#nav nav").removeClass('navbar-fixed-top');
+      $("#nav").css({height: 'auto'});
+    }
   });
 
 
@@ -48,6 +58,24 @@ $(document).ready(function(){
       }
 
     });
+
+  });
+
+
+
+  //smooth scroll
+  $("#main-nav a").click(function(){
+    
+    var anchor = $(this).attr("href");
+    var dest = $(anchor).offset().top - $("#nav nav").height();
+    
+    if(dest < 0) dest = 0;
+
+    $('html, body').animate({
+      scrollTop: dest
+    }, 800);
+
+    return false;
 
   });
 
