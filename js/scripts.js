@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 
   //smooth scroll
-  $("#main-nav a").click(function(){
+  $("#main-nav a, .smooth-scroll").click(function(){
     
     var anchor = $(this).attr("href");
     var dest = $(anchor).offset().top - $("#nav nav").height();
