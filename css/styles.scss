@@ -9,6 +9,7 @@ $xlarge: 1920px;
 
 body {
   position: relative;
+  overflow: hidden;
   font-family: "Roboto";
   font-weight: 300;
 }
@@ -100,6 +101,17 @@ body {
 
     &:hover > img {
       opacity: 1;
+    }
+  }
+
+  .navbar-toggle {
+    border: none;
+    position: relative;
+    left: 80px;
+    @include transition(left .3s ease-in-out);
+
+    &.visible {
+      left: 0;
     }
   }
 }

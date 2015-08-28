@@ -17,12 +17,14 @@ $(document).ready(function(){
     if($(window).scrollTop() > $("#home").height())
     {
       $("#nav nav").addClass('navbar-fixed-top');
+      $("#nav nav .navbar-toggle").addClass("visible");
       $("#nav").css({height: $("#nav nav").height()});
     }
     
     else 
     {
       $("#nav nav").removeClass('navbar-fixed-top');
+      $("#nav nav .navbar-toggle").removeClass("visible");
       $("#nav").css({height: 'auto'});
     }
   });
