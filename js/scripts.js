@@ -9,11 +9,15 @@ $(document).ready(function(){
     $("#home").height(newHeight);
   });
 
+
+
   //sticky nav
   bindIntereactionEvent(function(){
     if($(window).scrollTop() > $("#home").height()) $("nav.navbar").addClass('navbar-fixed-top');
     else $("nav.navbar").removeClass('navbar-fixed-top');
   });
+
+
 
   //slider
   setInterval(function(){
@@ -21,6 +25,33 @@ $(document).ready(function(){
       $(this).prependTo("#home .slides").show();
     });
   }, 8000);
+
+
+
+  //parallax
+  var $parallaxes = $("#home .slide");
+  var strength = 100;
+
+  bindIntereactionEvent(function(){
+
+    $parallaxes.each(function(){
+    
+      var rect = $(this)[0].getBoundingClientRect();
+      var winHeight = $(window).height();
+
+      if(rect.bottom < 0) return;
+
+      if(rect.top <= winHeight && rect.bottom > 0)
+      {
+        var offset = (((rect.bottom / (winHeight + rect.height)) - .5) * strength) + 50;  //hardcoded 50 here because bg image begins position @ 50% offset
+        $(this).css({backgroundPosition: "center " + offset + "%"});
+      }
+
+    });
+
+  });
+
+
 
   //scroll spy
   $('body').scrollspy({target: '#main-nav'});
