@@ -8,11 +8,12 @@ $large: 1440px;
 $xlarge: 1920px;
 
 body {
+  position: relative;
   font-family: "Roboto";
   font-weight: 300;
 }
 
-.hero {
+#home {
   position: relative;
   background: #000;
 
@@ -78,7 +79,7 @@ body {
   }
 }
 
-.main-nav {
+nav.navbar {
   background: #000;
   border-radius: 0;
   border: 0;
