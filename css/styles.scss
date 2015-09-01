@@ -20,7 +20,7 @@ body {
 
   .text {
     position: absolute;
-    top: 25vh;
+    top: 16vh;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -33,7 +33,11 @@ body {
 
     h1 {
       font-family: Lobster;
-      font-size: 12vw;
+      font-size: 16vw;
+
+      @media (min-width: $xsmall) {
+        font-size: 12vw;
+      }
 
       @media (min-width: $small) {
         font-size: 84px;
@@ -41,8 +45,12 @@ body {
     }
 
     h2 {
-      font-size: 6vw;
+      font-size: 9vw;
       font-weight: 300;
+
+      @media (min-width: $xsmall) {
+        font-size: 6vw;
+      }
 
       @media (min-width: $small) {
         font-size: 36px;
@@ -50,12 +58,38 @@ body {
     }
 
     h4 {
-      font-size: 4vw;
+      font-size: 6vw;
       font-weight: 300;
       line-height: 1.7;
 
+      @media (min-width: $xsmall) {
+        font-size: 4vw;
+      }
+
       @media (min-width: $small) {
         font-size: 18px;
+      }
+    }
+
+    .icon {
+      text-align: center;
+
+      a:hover {
+        opacity: .8;
+      }
+
+      img {
+        width: 12vw;
+        height: auto;
+
+        @media (min-width: $xsmall) {
+          width: 8vw;
+        }
+
+        @media (min-width: $small) {
+          width: 48px;
+          margin-top: 12px;
+        }
       }
     }
   }
