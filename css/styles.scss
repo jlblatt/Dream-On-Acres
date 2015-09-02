@@ -1,11 +1,15 @@
 @import "bourbon/bourbon";
 
-
 $xsmall: 360px;
 $small: 640px;
 $medium: 1024px;
 $large: 1440px;
 $xlarge: 1920px;
+
+$red: #ff1300;
+$blue: #03a7bd;
+$green: #00d726;
+$orange: #ff7a00;
 
 body {
   position: relative;
@@ -20,12 +24,16 @@ body {
 
   .text {
     position: absolute;
-    top: 16vh;
+    top: 8vh;
     width: 100%;
     color: #fff;
     text-align: center;
     z-index: 1;
     text-shadow: 0 4px 4px rgba(0,0,0,1);
+
+    @media (min-width: $xsmall) {
+      top: 14vh;
+    }
 
     a {
       color: #fff;
@@ -47,13 +55,17 @@ body {
     h2 {
       font-size: 9vw;
       font-weight: 300;
+      position: relative;
+      top: -1.5vh;
 
       @media (min-width: $xsmall) {
         font-size: 6vw;
+        top: -1vh;
       }
 
       @media (min-width: $small) {
         font-size: 36px;
+        top: -6px;
       }
     }
 
@@ -68,6 +80,43 @@ body {
 
       @media (min-width: $small) {
         font-size: 18px;
+      }
+    }
+
+    .color-bar {
+      margin: 0 auto 18px auto;
+      width: 80%;
+      box-shadow: 0 4px 4px rgba(0,0,0,.4);
+      line-height: 2px;
+
+      @media (min-width: $xsmall) {
+        width: 50%;
+      }
+
+      @media (min-width: $small) {
+        width: 30%
+      }
+
+      > span {
+        display: inline-block;
+        width: 25%;
+        height: 2px;
+
+        &:first-child {
+          background-color: $red;
+        }
+
+        &:nth-child(2) {
+          background-color: $blue;
+        }
+
+        &:nth-child(3) {
+          background-color: $green;
+        }
+
+        &:nth-child(4) {
+          background-color: $orange;
+        }
       }
     }
 
@@ -124,6 +173,7 @@ body {
     padding-left: 64px;
     font-size: 24px;
     font-family: Lobster;
+    color: #fff;
 
     > img {
       position: absolute;
@@ -131,11 +181,10 @@ body {
       height: 36px;
       margin-left: -52px;
       margin-top: -8px;
-      opacity: .385;
     }
 
-    &:hover > img {
-      opacity: 1;
+    &:hover {
+      opacity: .8;
     }
   }
 
@@ -148,5 +197,48 @@ body {
     &.visible {
       left: 0;
     }
+  }
+}
+
+section.body-section {
+  padding: 18px 0;
+  
+  @media (min-width: $small) {
+    padding: 48px 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: Lobster;
+    font-size: 8vw;
+
+    @media (min-width: $small) {
+      font-size: 48px;
+    }
+
+  }
+}
+
+#about-us {
+  h1 {
+    color: $red
+  }
+}
+
+#services-pricing {
+  h1 {
+    color: $blue
+  }
+}
+
+#gallery {
+  h1 {
+    color: $green;
+  }
+}
+
+#contact {
+  h1 {
+    color: $orange;
   }
 }

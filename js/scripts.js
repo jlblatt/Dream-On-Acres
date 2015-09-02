@@ -14,7 +14,7 @@ $(document).ready(function(){
   //sticky nav
   bindIntereactionEvent(function(){
     
-    if($(window).scrollTop() > $("#home").height())
+    if($(window).scrollTop() > $("#home").height() - 5)
     {
       $("#nav nav").addClass('navbar-fixed-top');
       $("#nav nav .navbar-toggle").addClass("visible");
@@ -27,6 +27,14 @@ $(document).ready(function(){
       $("#nav nav .navbar-toggle").removeClass("visible");
       $("#nav").css({height: 'auto'});
     }
+
+  });
+
+
+
+  //close nav on click
+  $('.nav a').on('click', function(){
+    $(".navbar-toggle").click();
   });
 
 
@@ -69,7 +77,7 @@ $(document).ready(function(){
   $("#main-nav a, .smooth-scroll").click(function(){
     
     var anchor = $(this).attr("href");
-    var dest = $(anchor).offset().top - $("#nav nav").height();
+    var dest = $(anchor).offset().top - $("#nav nav .navbar-header").height();
     
     if(dest < 0) dest = 0;
 
