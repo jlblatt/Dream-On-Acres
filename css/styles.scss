@@ -11,6 +11,8 @@ $blue: #03a7bd;
 $green: #00d726;
 $orange: #ff7a00;
 
+a {outline: 0;}
+
 body {
   position: relative;
   overflow: hidden;
@@ -201,19 +203,21 @@ body {
 }
 
 section.body-section {
-  padding: 18px 0;
-  
+  padding: 48px 0 18px 0;
+
   @media (min-width: $small) {
-    padding: 48px 0;
+    padding: 72px 0 48px 0;
   }
 
   h1 {
     text-align: center;
     font-family: Lobster;
     font-size: 8vw;
+    margin-bottom: 4vw;
 
     @media (min-width: $small) {
       font-size: 48px;
+      margin-bottom: 36px;
     }
 
   }

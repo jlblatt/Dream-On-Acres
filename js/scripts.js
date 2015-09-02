@@ -33,8 +33,8 @@ $(document).ready(function(){
 
 
   //close nav on click
-  $('.nav a').on('click', function(){
-    $(".navbar-toggle").click();
+  $('#nav nav a').on('click', function(){
+    if($("#nav nav .navbar-collapse").attr('aria-expanded') == 'true') $(".navbar-toggle").click();
   });
 
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
   $("#main-nav a, .smooth-scroll").click(function(){
     
     var anchor = $(this).attr("href");
-    var dest = $(anchor).offset().top - $("#nav nav .navbar-header").height();
+    var dest = $(anchor).offset().top;
     
     if(dest < 0) dest = 0;
 
