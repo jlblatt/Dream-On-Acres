@@ -246,3 +246,13 @@ section.body-section {
     color: $orange;
   }
 }
+
+div.staggered {
+
+  .row > div > .item {
+    height: 200px;
+    background: #ccc;
+    margin-bottom: 24px;
+  }
+
+}
