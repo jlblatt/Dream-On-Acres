@@ -78,12 +78,17 @@ $(document).ready(function(){
     
     var anchor = $(this).attr("href");
     var dest = $(anchor).offset().top;
+    var curr = $('html').scrollTop();
+    var diff = Math.abs(curr - dest);
+    var time = (diff / $('html').height()) * 1800;
+    if(time < 300) time = 300;
+    console.log(time);
     
     if(dest < 0) dest = 0;
 
     $('html, body').animate({
       scrollTop: dest
-    }, 800);
+    }, time);
 
     return false;
 
