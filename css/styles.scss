@@ -6,12 +6,14 @@ $medium: 1024px;
 $large: 1440px;
 $xlarge: 1920px;
 
-$red: #ff1300;
-$blue: #03a7bd;
-$green: #00d726;
-$orange: #ff7a00;
+$red: #FF3727;
+$blue: #1E9FB1;
+$green: #20D03F;
+$orange: #FF8F27;
 
 a {outline: 0;}
+
+.btn-danger {border: none; background: $red; &:hover{background: $red; opacity: .8;}}
 
 body {
   position: relative;
@@ -249,10 +251,39 @@ section.body-section {
 
 div.staggered {
 
-  .row > div > .item {
-    height: 200px;
-    background: #ccc;
-    margin-bottom: 24px;
+  div.item {
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    padding: 1vw;
+
+    @media (min-width: $small) {
+      width: 25%;
+
+      &:nth-child(7n - 2) {
+        margin-left: 12.5%;
+      }
+    }
+
+    a {
+      display: block;
+      height: 30vw;
+      background-size: cover;
+
+      @media (min-width: $small) {
+        height: 15vw;
+      }
+
+      @media (min-width: $medium) {
+        height: 200px;
+      }
+
+      @media (min-width: $large) {
+        height: 240px;
+      }
+    }
   }
+
+   
 
 }
