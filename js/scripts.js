@@ -96,6 +96,36 @@ $(document).ready(function(){
 
 
 
+  //photoswipe
+  var pswpElement = document.querySelectorAll('.pswp')[0];
+
+  var items = [];
+  $("#gallery .item a").each(function(){
+
+    items.push({
+      src: $(this).attr('href'),
+      msrc: $(this).attr('href').replace("gallery", "gallery/thumbs"),
+      w: 1920,
+      h: 1440
+    });
+  });
+      
+  var options = {
+    bgOpacity: .95,
+    history: false,
+    preload: [1,3],
+    index: 0    
+  };
+
+  $("#gallery .item a").click(function(){
+    options.index = $(this).parent().index();
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+    return false;
+  });  
+
+
+
   //scroll spy
   $('body').scrollspy({target: '#main-nav'});
 

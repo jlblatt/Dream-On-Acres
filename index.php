@@ -12,14 +12,15 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/photoswipe.css" rel="stylesheet"> 
+    <link href="/css/photoswipe-skin/default-skin.css" rel="stylesheet"> 
     <link href="/css/styles.css" rel="stylesheet">
-
 
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
       <script>window.jQuery || document.write('<script src="/js/jquery-2.1.3.min.js"><\/script>')</script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/photoswipe.min.js"></script> 
+    <script src="/js/photoswipe-ui-default.min.js"></script> 
     <script src="/js/jquery.debouncedresize.js"></script>
     <script src="/js/fastclick.js"></script>
     <script src="/js/scripts.js"></script>
@@ -88,34 +89,30 @@
       <div class="container">
         <h1>&bull; Gallery &bull;</h1>
         <div class="staggered">
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
-          <div class="item"><a href="#" style="background: url(/images/gallery/thumbs/img_0987.jpg) center center;"></a></div>
+
+          <?php
+            $dir = "images/gallery";
+            $files = array();
+            if(is_dir($dir))
+            {
+              if($dh = opendir($dir))
+              {
+                while(($file = readdir($dh)) !== false)
+                {
+                  if($file != '.' && $file != '..' && $file != 'thumbs')
+                  {
+                    $files[] = $file;
+                  }
+                }
+                  
+                closedir($dh);
+              }
+            }
+          ?>
+
+          <?php foreach($files as $file): ?>
+            <div class="item"><a href="/images/gallery/<?php echo $file; ?>" style="background: url(/images/gallery/thumbs/<?php echo $file; ?>) center center;"></a></div>
+          <?php endforeach; ?>
         </div>
       </div>
     </section>
@@ -125,6 +122,41 @@
         <h1>&bull; Contact &bull;<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></h1>
       </div>
     </section>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div> 
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

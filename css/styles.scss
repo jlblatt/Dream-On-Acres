@@ -13,7 +13,8 @@ $orange: #FF8F27;
 
 a {outline: 0;}
 
-.btn-danger {border: none; background: $red; &:hover{background: $red; opacity: .8;}}
+.btn {border: none; &:hover{background: $red; opacity: .8;}}
+.btn-danger {background: $red; &:hover{background: $red;}}
 
 body {
   position: relative;
