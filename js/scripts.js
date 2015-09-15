@@ -11,6 +11,19 @@ $(document).ready(function(){
 
 
 
+  //services panel height
+  bindWindowSizeEvent(function(){
+    var tallest = 0;
+
+    $("#services-pricing .panel").each(function(){
+      $(this).css({height: 'auto'});
+      if($(this).height() > tallest) tallest = $(this).height();
+    });
+
+    if($(window).width() >= 640) $("#services-pricing .panel").css({height: tallest});
+  });
+
+
   //sticky nav
   bindIntereactionEvent(function(){
     

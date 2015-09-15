@@ -13,8 +13,9 @@ $orange: #FF8F27;
 
 a {outline: 0;}
 
-.btn {border: none; &:hover{background: $red; opacity: .8;}}
+.btn {border: none; &:hover{opacity: .8;}}
 .btn-danger {background: $red; &:hover{background: $red;}}
+.btn-primary {background: $blue; &:hover{background: $blue;}}
 
 body {
   position: relative;
@@ -90,22 +91,21 @@ body {
 
     .color-bar {
       margin: 0 auto 18px auto;
-      width: 80%;
-      box-shadow: 0 4px 4px rgba(0,0,0,.4);
-      line-height: 2px;
-
-      @media (min-width: $xsmall) {
-        width: 50%;
-      }
-
-      @media (min-width: $small) {
-        width: 30%
-      }
 
       > span {
         display: inline-block;
-        width: 25%;
-        height: 2px;
+        margin: 0 12px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        box-shadow: 0 4px 4px rgba(0,0,0,.4);
+
+        @media (min-width: $small) {
+          margin: 0 20px;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+        }
 
         &:first-child {
           background-color: $red;
@@ -236,11 +236,68 @@ section.body-section {
   h1 {
     color: $blue
   }
+
+  .panel.panel-default {
+    border-radius: 0;
+    background: #f8f8f8;
+    border-color: #eee;
+    text-align: center;
+
+    h3 {
+      margin: 8px 0 18px 0;
+      color: #666;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #888;
+
+      strong {
+        color: #666;
+      }
+    }
+  }
 }
 
 #gallery {
   h1 {
     color: $green;
+  }
+
+  div.staggered {
+
+    div.item {
+      box-sizing: border-box;
+      float: left;
+      width: 33%;
+      padding: 1vw;
+
+      @media (min-width: $small) {
+        width: 25%;
+
+        &:nth-child(7n - 2) {
+          margin-left: 12.5%;
+        }
+      }
+
+      a {
+        display: block;
+        height: 30vw;
+        background-size: cover;
+
+        @media (min-width: $small) {
+          height: 15vw;
+        }
+
+        @media (min-width: $medium) {
+          height: 200px;
+        }
+
+        @media (min-width: $large) {
+          height: 240px;
+        }
+      }
+    }
   }
 }
 
@@ -248,43 +305,65 @@ section.body-section {
   h1 {
     color: $orange;
   }
-}
 
-div.staggered {
+  a {
+    color: $orange;
 
-  div.item {
-    box-sizing: border-box;
-    float: left;
-    width: 33%;
-    padding: 1vw;
-
-    @media (min-width: $small) {
-      width: 25%;
-
-      &:nth-child(7n - 2) {
-        margin-left: 12.5%;
-      }
+    &:hover {
+      opacity: .8;
     }
+  }
 
-    a {
-      display: block;
-      height: 30vw;
-      background-size: cover;
+  .contact-info {
+    text-align: center;
 
-      @media (min-width: $small) {
-        height: 15vw;
+    .hours {
+      
+      span {
+        float: left;
+        width: 47%;
+        text-align: right;
+        padding-right: 12px;
       }
 
-      @media (min-width: $medium) {
-        height: 200px;
-      }
-
-      @media (min-width: $large) {
-        height: 240px;
+      strong {
+        float: left;
+        width: 53%;
+        text-align: left;
       }
     }
   }
 
-   
+  form {
+    padding-top: 48px;
 
+    @media (min-width: $small) {
+      padding-top: 72px;
+    }
+
+    textarea {
+      height: 200px;
+    }
+  }
+}
+
+footer {
+  padding-bottom: 36px; 
+  text-align: center;
+
+  @media (min-width: $small) {
+    padding-bottom: 72px;
+  }
+
+  img {
+    display: inline-block;
+    width: 28px;
+    height: auto;
+    margin: 0 3px;
+
+    @media (min-width: $small) {
+      width: 36px;
+      margin: 0 6px;
+    }
+  }
 }
