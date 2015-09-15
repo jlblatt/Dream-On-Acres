@@ -13,14 +13,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/photoswipe.css" rel="stylesheet"> 
-    <link href="css/photoswipe-skin/default-skin.css" rel="stylesheet"> 
+    <link href="css/photoswipe-skin/default-skin.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/jquery-2.1.3.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/photoswipe.min.js"></script> 
-    <script src="js/photoswipe-ui-default.min.js"></script> 
+    <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/jquery.debouncedresize.js"></script>
     <script src="js/fastclick.js"></script>
     <script src="js/scripts.js"></script>
@@ -191,7 +191,7 @@
             
           <div class="col-sm-2"></div>
 
-          <div class="col-sm-4 hours">
+          <div class="col-sm-4 hours clearfix">
             <h4>Hours</h4>
             <p><span>Check In:</span><strong>8:00 – 11:00 am</strong><span>Check Out:</span><strong>4:00 – 7:00 pm</strong><span>Grooming:</span><strong>By Appointment</strong></p>
           </div>

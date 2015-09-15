@@ -18,8 +18,6 @@ a {outline: 0;}
 .btn-primary {background: $blue; &:hover{background: $blue;}}
 
 body {
-  position: relative;
-  overflow: hidden;
   font-family: "Roboto";
   font-weight: 300;
 }
@@ -173,6 +171,7 @@ body {
   border-radius: 0;
   border: 0;
   margin: 0;
+  overflow: hidden;
 
   .navbar-brand {
     padding-left: 64px;
@@ -317,7 +316,16 @@ section.body-section {
   .contact-info {
     text-align: center;
 
+    .location {
+      
+    }
+
     .hours {
+      padding-bottom: 36px;
+
+      @media (min-width: $small) {
+        padding-bottom: 0;
+      }
       
       span {
         float: left;

@@ -95,7 +95,6 @@ $(document).ready(function(){
     var diff = Math.abs(curr - dest);
     var time = (diff / $('html').height()) * 1800;
     if(time < 300) time = 300;
-    console.log(time);
     
     if(dest < 0) dest = 0;
 
