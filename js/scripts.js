@@ -20,7 +20,7 @@ $(document).ready(function(){
       if($(this).height() > tallest) tallest = $(this).height();
     });
 
-    if($(window).width() >= 640) $("#services-pricing .panel").css({height: tallest});
+    if(window.matchMedia('(min-width: 768px)').matches) $("#services-pricing .panel").css({height: tallest});
   });
 
 
