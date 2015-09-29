@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kennel Gettysburg, PA - Dream On Acres Boarding Kennel</title>
+    <title>Dream On Acres Boarding Kennel, Gettysburg, PA</title>
     <meta name="description" content="Dream On Acres Boarding Kennel of Gettysburg, PA. Clean and Secure Facility, Fenced Play Areas, Homemade Dog Treats. Call 717-677-7930." />
 
     <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -72,9 +72,9 @@
       <div class="container">
         <h1>&bull; About Us &bull;</h1>
         <div class="row">
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-1.jpg" alt="Dog" /></p><h2>Dags</h2><p>Puppy kitty ipsum dolor sit good dog walk food slobbery kitty fluffy puppy finch groom lol catz commands ball ferret wag tail. Yawn small animals parakeet canary dog house bird seed whiskers warm litter.</p><p>Tooth park dog house meow turtle fetch fish canary tooth tail paws vitamins. Aquatic Snowball play lol catz smooshy scratch Scooby snacks string crate Snowball fetch gimme five foot kitten finch whiskers. Wet Nose kitty cockatiel birds house train catch turtle.</p><p><a class="btn btn-danger smooth-scroll" href="#services-pricing">Services / Pricing</a></p></div>
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-2.jpg" alt="Dog" /></p><h2>You like dags?</h2><p>Puppy kitty ipsum dolor sit good dog walk food slobbery kitty fluffy puppy</p><p>Finch groom lol catz commands ball ferret wag tail. Yawn small animals parakeet canary dog house bird seed whiskers warm litter. Tooth park dog house meow turtle fetch fish canary tooth tail paws vitamins. Aquatic Snowball play lol catz</p><p>Smooshy scratch Scooby snacks string crate Snowball fetch gimme five foot kitten finch whiskers. Wet Nose kitty cockatiel birds house train catch turtle.</p><a class="btn btn-danger smooth-scroll" href="#gallery">View Our Gallery</a></p></div>
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-3.jpg" alt="Dog" /></p><h2>Oh, dogs. Sure, I like dags. I like caravans more.</h2><p>Puppy kitty ipsum dolor sit good dog walk food slobbery kitty fluffy puppy</p><ul><li>foobar</li><li>bazbuz</li><li>watwat</li></ul><p>catz smooshy scratch Scooby snacks string crate Snowball fetch gimme five foot kitten finch whiskers. Wet Nose kitty cockatiel birds house train catch turtle.</p><p><a class="btn  btn-danger smooth-scroll" href="#contact">Make an Appointment</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-1.jpg" alt="Dog" /></p><p><a class="btn btn-danger smooth-scroll" href="#services-pricing">Services / Pricing</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-2.jpg" alt="Dog" /></p><p><a class="btn btn-danger smooth-scroll" href="#gallery">View Our Gallery</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-3.jpg" alt="Dog" /></p><p><a class="btn  btn-danger smooth-scroll" href="#contact">Make an Appointment</a></p></div>
         </div>
       </div>
     </section>
