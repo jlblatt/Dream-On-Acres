@@ -72,9 +72,9 @@
       <div class="container">
         <h1>&bull; About Us &bull;</h1>
         <div class="row">
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-1.jpg" alt="Dog" /></p><p><a class="btn btn-danger smooth-scroll" href="#services-pricing">Services / Pricing</a></p></div>
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-2.jpg" alt="Dog" /></p><p><a class="btn btn-danger smooth-scroll" href="#gallery">View Our Gallery</a></p></div>
-          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-3.jpg" alt="Dog" /></p><p><a class="btn  btn-danger smooth-scroll" href="#contact">Make an Appointment</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-1.jpg" alt="Dog" /></p><h2>Clean &amp; Caring</h2><p>Dream On Acres Boarding Kennel of Gettysburg PA is a clean &amp; caring facility for the overnight lodging of your canine family member.  We offer a fenced-in play yard, professional care with one-on-one attention, &amp; Pedigree dog food and Milk Bone snacks to all guests.  Dogs are out for neccessities and playtime 4 times a day.  While at Dream On Acres, your dog will be in good hands.</p><p><a class="btn btn-danger smooth-scroll" href="#services-pricing">Services / Pricing</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-3.jpg" alt="Dog" /></p><h2>We Love our Dogs</h2><p>We (owners <strong>Sue and Don Plitt</strong>) are compassionate pet owners, and maintain a current stable of dogs, cats, chickens, goats, and horses.  We are on the premises at all times and will care for your pet as if it were our own.  With years of experience as both pet and kennel owners, you can be safe in the knowledge that your dog will receive the best of care.</p><p><a class="btn btn-danger smooth-scroll" href="#gallery">View Our Gallery</a></p></div>
+          <div class="col-sm-4"><p><img class="img-responsive" src="images/column-2.jpg" alt="Dog" /></p><h2>Safe &amp; Secure</h2><p>We only accept spayed &amp; neutered animals.  All animals must have up-to-date rabies, distemper &amp; kennel cough vaccinations, and must be on flea control.  We reserve the right to prohibit admittance of pets lacking proper proof of vaccinations, pets displaying signs of untreated or potentially contagious conditions, and/or pets exhibiting aggressive behavior. Our facility is inspected twice a year compliant to the laws of Pennsylvania, and we are insured for your protection.</p><p><a class="btn btn-danger smooth-scroll" href="#contact">Make an Appointment</a></p></div>
         </div>
       </div>
     </section>
@@ -89,9 +89,10 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <h3>Room &amp; Board</h3>
-                <p>Small Dogs (under 30 lbs.)<br /><strong>$29 per night*</strong></p>
-                <p>Large Dogs (over 30 lbs.)<br /><strong>$39 per night*</strong></p>
-                <p><em>*weighed upon arrival</em></p>
+                <p>Small &amp; Medium Dogs &mdash; <strong>$20 per day</strong></p>
+                <p>Large Dogs &mdash; <strong>$25 per day</strong></p>
+                <p><em>Dog Sharing &mdash; <strong>$15 per day</strong></em></p>
+                <p><em>Additional Medication &mdash; <strong>$3 per day</strong></em></p>
               </div>
             </div>
           </div>
@@ -99,10 +100,11 @@
           <div class="col-sm-4">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h3>Shampoo / Bath</h3>
-                <p>Small Dogs (under 30 lbs.)<br /><strong>$9 + $9 grooming</strong></p>
-                <p>Large / Show Dogs (over 30 lbs.)<br /><strong>$19 + $14 grooming</strong></p>
-                <p>Hypoallergenic Shampoo<br /><strong>+$5</strong></p>
+                <h3>Check In/Out Times</h3>
+                <p>Mon, Tue, Thu, Fri &mdash; <strong>8am - 11am / 4pm - 7pm</strong></p>
+                <p>Sat &mdash; <strong>8am - 12pm</strong></p>
+                <p>Sun &mdash; <strong>9am - 12pm</strong></p>
+                <p><strong>*CLOSED WEDNESDAYS*</strong></p>
               </div>
             </div>
           </div>
@@ -110,10 +112,10 @@
           <div class="col-sm-4">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h3>Clipping</h3>
-                <p>All Paws Clipped, Filed, Painted and Photogtaphed<br /><strong>$29 weekday / $39 weekend</strong></p>
-                <p>Basic Clip/File<br /><strong>$19 ($9 w/ boarding)</strong></p>
-                <p>Per Paw<br /><strong>$4</strong></p>
+                <h3>Grooming</h3>
+                <p>Prices vary depending upon the breed size and condition of the pet's coat.</p>
+                <p>Please call for price estimates.</p>
+                <p><strong>ALL GROOMING BY APPT.</strong></p>
               </div>
             </div>
           </div>
@@ -121,31 +123,13 @@
         </div>
 
         <div class="row">
-
           <div class="col-sm-2"></div>
           
-          <div class="col-sm-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <h3>Room &amp; Board</h3>
-                <p>Small Dogs (under 30 lbs.)<br /><strong>$29 per night*</strong></p>
-                <p>Large Dogs (over 30 lbs.)<br /><strong>$39 per night*</strong></p>
-                <p><em>*weighed upon arrival</em></p>
-              </div>
-            </div>
+          <div class="col-sm-8">
+            <p class="text-center disclaimer"><strong>The fine print:</strong> Early drop off or late pick up fees shall apply. Pets picked up after check-out will be charged for that day. We request 48 hour notification for cancellation so that we may reschedule.  All rates &amp; services are subject to availability &amp; change.</p>
           </div>
 
-          <div class="col-sm-4">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <h3>Shampoo / Bath</h3>
-                <p>Small Dogs (under 30 lbs.)<br /><strong>$9 + $9 grooming</strong></p>
-                <p>Large / Show Dogs (over 30 lbs.)<br /><strong>$19 + $14 grooming</strong></p>
-                <p>Hypoallergenic Shampoo<br /><strong>+$5</strong></p>
-              </div>
-            </div>
-          </div>
-
+          <div class="col-sm-2"></div>
         </div>
 
       </div>
@@ -193,7 +177,13 @@
 
           <div class="col-sm-4 hours clearfix">
             <h4>Hours</h4>
-            <p><span>Check In:</span><strong>8:00 – 11:00 am</strong><span>Check Out:</span><strong>4:00 – 7:00 pm</strong><span>Grooming:</span><strong>By Appointment</strong></p>
+            <p class="center">
+              <span>Mon, Tue, Thu, Fri</span><strong>8am - 11am / 4pm - 7pm</strong><br />
+              <span>Sat</span><strong>8am - 12pm</strong><br />
+              <span>Sun</span><strong>9am - 12pm</strong><br /><br />
+              <em>CLOSED WEDNESDAYS</em><br />
+              <em>GROOMING BY APPT. ONLY</em>
+            </p>
           </div>
 
           <div class="col-sm-4 location">
