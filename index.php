@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,14 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster|Roboto:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/photoswipe.css" rel="stylesheet"> 
+    <link href="css/photoswipe.css" rel="stylesheet">
     <link href="css/photoswipe-skin/default-skin.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/jquery-2.1.3.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/photoswipe.min.js"></script> 
+    <script src="js/photoswipe.min.js"></script>
     <script src="js/photoswipe-ui-default.min.js"></script>
     <script src="js/jquery.debouncedresize.js"></script>
     <script src="js/fastclick.js"></script>
@@ -82,9 +82,9 @@
     <section id="services-pricing" class="body-section">
       <div class="container">
         <h1>&bull; Services / Pricing &bull;</h1>
-        
+
         <div class="row">
-          
+
           <div class="col-sm-4">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -108,7 +108,7 @@
               </div>
             </div>
           </div>
-        
+
           <div class="col-sm-4">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -124,7 +124,7 @@
 
         <div class="row">
           <div class="col-sm-2"></div>
-          
+
           <div class="col-sm-8">
             <p class="text-center disclaimer"><strong>The fine print:</strong> Early drop off or late pick up fees shall apply. Pets picked up after check-out will be charged for that day. We request 48 hour notification for cancellation so that we may reschedule.  All rates &amp; services are subject to availability &amp; change.</p>
           </div>
@@ -154,7 +154,7 @@
                     $files[] = $file;
                   }
                 }
-                  
+
                 closedir($dh);
               }
             }
@@ -172,17 +172,15 @@
         <h1>&bull; Contact &bull;</h1>
 
         <div class="row contact-info">
-            
+
           <div class="col-sm-2"></div>
 
           <div class="col-sm-4 hours clearfix">
             <h4>Hours</h4>
-            <p class="center">
+            <p>
               <span>Mon, Tue, Thu, Fri</span><strong>8am - 11am / 4pm - 7pm</strong><br />
               <span>Sat</span><strong>8am - 12pm</strong><br />
-              <span>Sun</span><strong>9am - 12pm</strong><br /><br />
-              <em>CLOSED WEDNESDAYS</em><br />
-              <em>GROOMING BY APPT. ONLY</em>
+              <span>Sun</span><strong>9am - 12pm</strong>
             </p>
           </div>
 
@@ -193,64 +191,21 @@
 
         </div>
 
-        <form>
+        <div class="row">
+          <div class="col-sm-2"></div>
 
-          <div class="row">
+            <div class="col-sm-8 hours clearfix">
 
-            <div class="col-sm-3"></div>
-            
-            <div class="col-sm-3">
-               <div class="form-group">
-                <label for="ufname">First Name</label>
-                <input type="text" class="form-control" id="ufname" name="ufname" placeholder="Jane" />
-              </div>              
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12242.364638074754!2d-77.213139!3d39.905785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4216c0eed3be25ae!2sDream+On+Acres!5e0!3m2!1sen!2sus!4v1446168391578" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+              <p class="text-center">
+                <em>CLOSED WEDNESDAYS</em><br />
+                <em>GROOMING BY APPT. ONLY</em>
+              </p>
+
             </div>
 
-            <div class="col-sm-3">
-               <div class="form-group">
-                <label for="ulname">Last Name</label>
-                <input type="text" class="form-control" id="ulname" name="ulname" placeholder="Doe" />
-              </div>              
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm-3"></div>
-
-            <div class="col-sm-3">
-               <div class="form-group">
-                <label for="uphone">Phone</label>
-                <input type="tel" class="form-control" id="uphone" name="uphone" placeholder="717-677-7930" />
-              </div>              
-            </div>
-
-            <div class="col-sm-3">
-               <div class="form-group">
-                <label for="uemail">Email Address</label>
-                <input type="email" class="form-control" id="uemail" name="uemail" placeholder="jane.doe@example.com" />
-              </div>              
-            </div>
-
-          </div>
-
-          <div class="row">
-            
-            <div class="col-sm-3"></div>
-
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="umessage">Message</label>
-                <textarea class="form-control" id="umessage" name="umessage" placeholder="Questions, comments, special requests, etc..."></textarea>
-              </div>
-              <div class="text-center"><input type="submit" class="btn btn-primary" value="Send" /></div>
-            </div>
-
-          </div>
-
-        </form>
-
+        </div>
       </div>
     </section>
 
@@ -285,7 +240,7 @@
             </div>
           </div>
           <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div> 
+            <div class="pswp__share-tooltip"></div>
           </div>
           <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
           <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
