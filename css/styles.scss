@@ -28,7 +28,7 @@ body {
 
   .text {
     position: absolute;
-    top: 8vh;
+    top: 8%;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -36,7 +36,7 @@ body {
     text-shadow: 0 4px 4px rgba(0,0,0,1);
 
     @media (min-width: $xsmall) {
-      top: 14vh;
+      top: 15%;
     }
 
     a {
@@ -60,11 +60,11 @@ body {
       font-size: 9vw;
       font-weight: 300;
       position: relative;
-      top: -1.5vh;
+      top: -10px;
 
       @media (min-width: $xsmall) {
         font-size: 6vw;
-        top: -1vh;
+        top: -8px;
       }
 
       @media (min-width: $small) {
